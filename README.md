@@ -1,5 +1,9 @@
 # Laravel Book Management System
 
+## Branch Information
+The main codebase is located in the `master` branch. Please ensure you are working with or referencing the correct branch.
+
+
 ## Description
 This is a simple CRUD application built with Laravel to manage books. Users can add, view, update, and delete books. Each book has a title, author, and summary.
 
@@ -20,21 +24,27 @@ To get the application up and running, follow these steps:
 
 2. **Navigate to the project directory**:
     ```sh
-    cd BookManager-app
+    cd book-api
     ```
 
-3. **Install dependencies**:
+3. **Checkout the `master` branch**:
+    ```sh
+    git checkout master
+    ```
+    ```
+
+4. **Install dependencies**:
     ```sh
     composer install
     npm install
     ```
 
-4. **Copy `.env.example` to `.env`**:
+5. **Copy `.env.example` to `.env`**:
     ```sh
     cp .env.example .env
     ```
 
-5. **Set up the database**:
+6. **Set up the database**:
     - Open the `.env` file and set your database credentials.
     ```dotenv
     DB_CONNECTION=mysql
@@ -45,22 +55,22 @@ To get the application up and running, follow these steps:
     DB_PASSWORD=your_database_password
     ```
 
-6. **Generate the application key**:
+7. **Generate the application key**:
     ```sh
     php artisan key:generate
     ```
 
-7. **Run migrations**:
+8. **Run migrations**:
     ```sh
     php artisan migrate
     ```
 
-8. **Start the development server**:
+9. **Start the development server**:
     ```sh
     php artisan serve
     ```
 
-9. **Access the application**:
+10. **Access the application**:
     Open Postman and use this base URL `http://127.0.0.1:8000/api`.
 
 ## Usage
